@@ -5,8 +5,8 @@
 ```
 clone the repo / extract the archive
 $ cd atlan-task
-$ yarn i
-$ cp default.example.json default.json
+$ yarn install
+$ cp config/default.example.json config/default.json
 $ yarn dev
 ```
 
@@ -15,6 +15,29 @@ $ yarn dev
 ### Strict Mode
 
 Strict mode is enabled by default. For more info refer: https://dev.to/briwa/how-strict-is-typescript-s-strict-mode-311a
+
+### Plugins
+- all of the "post-response-plugins" are stored inside the `src/plugins` directory.
+- All of the configuration for plugins is stored inside the `config/default.json` file.
+- Each plugin has a separate class in which queue is created using `bull`.
+- Inside the `src/plugins/index.ts` all of the plugins are instantiated and exported as an object.
+- Finally inside the reponse Controller reformed response data is added to corresponding queue.
+
+** for the sheets plugins a "googleapi" credentials.json file is required inside `src/plugins/sheets`, of the form : 
+```
+{
+  "type": "service_account",
+  "project_id": "",
+  "private_key_id": "",
+  "private_key": "",
+  "client_email": "",
+  "client_id": "",
+  "auth_uri": "",
+  "token_uri": "",
+  "auth_provider_x509_cert_url": "",
+  "client_x509_cert_url": ""
+}
+```
 
 ### Centralised Logging
 

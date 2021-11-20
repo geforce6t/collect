@@ -1,0 +1,24 @@
+{
+  "db": {
+    "url": ""
+  },
+  "logs": {
+    "logging_level": "info",
+    "serviceName": "defaultServiceName",
+    "logglyToken": "",
+    "logglySubdomain": ""
+  },
+  "server": {
+    "port": 8000,
+    "proxy": "", 
+    "domain": "http://localhost:8000"
+  },
+  "sheetPluginConfig": {
+    "name": "sheets",
+    "DriveRootFolder": ""
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": ""
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "atlan-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "ts-node --files src/server.ts",
+    "start": "ts-node dist/server.js",
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "geforce6t",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bull": "^3.15.5",
+    "@types/bunyan": "^1.8.8",
+    "@types/config": "^0.0.40",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.11.7",
+    "prettier": "2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "bull": "^4.1.1",
+    "bunyan": "^1.8.15",
+    "bunyan-loggly": "^1.4.2",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "googleapis": "^91.0.0",
+    "mongoose": "^6.0.13",
+    "reflect-metadata": "^0.1.13"
+  }
+}

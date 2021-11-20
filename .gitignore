@@ -1,0 +1,7 @@
+node_modules/
+logs/logs*
+package-lock.json
+config/production.json
+config/default.json
+dist/
+credentials.json

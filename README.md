@@ -1,20 +1,17 @@
-# Atlan-Task
+# Collect
+Schematic for storing forms (with questions) and responses (with answers) with relevant metadata along with plugins. 
 
 ### Usage
 
 ```
-clone the repo / extract the archive
-$ cd atlan-task
+clone the repo
+$ cd collect
 $ yarn install
 $ cp config/default.example.json config/default.json
 $ yarn dev
 ```
 
 ## Usage and Features
-
-### Strict Mode
-
-Strict mode is enabled by default. For more info refer: https://dev.to/briwa/how-strict-is-typescript-s-strict-mode-311a
 
 ### Plugins
 - all of the "post-response-plugins" are stored inside the `src/plugins` directory.

@@ -30,7 +30,7 @@
     "class-validator": "^0.13.1",
     "config": "^3.3.6",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "googleapis": "^91.0.0",
     "mongoose": "^6.0.13",
     "reflect-metadata": "^0.1.13"
